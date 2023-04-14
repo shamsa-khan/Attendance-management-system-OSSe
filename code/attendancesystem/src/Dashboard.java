@@ -53,6 +53,11 @@ public class Dashboard extends javax.swing.JFrame {
         Epbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         Epbutton.setForeground(new java.awt.Color(255, 255, 255));
         Epbutton.setText("Edit Profile");
+        Epbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EpbuttonActionPerformed(evt);
+            }
+        });
         Eppanel.add(Epbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 150, 40));
 
         mainpanel.add(Eppanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 190, 100));
@@ -125,6 +130,13 @@ public class Dashboard extends javax.swing.JFrame {
         ss.show();
         dispose();
     }//GEN-LAST:event_SSbutton1ActionPerformed
+
+    private void EpbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EpbuttonActionPerformed
+        // TODO add your handling code here:
+        editprofile f = new editprofile();
+        f.show();
+        dispose();
+    }//GEN-LAST:event_EpbuttonActionPerformed
 
     /**
      * @param args the command line arguments
