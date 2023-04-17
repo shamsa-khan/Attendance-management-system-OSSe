@@ -47,12 +47,22 @@ public class Pdashboard extends javax.swing.JFrame {
         ctteacherbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         ctteacherbutton1.setForeground(new java.awt.Color(255, 255, 255));
         ctteacherbutton1.setText("Communicate with Teacher");
+        ctteacherbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ctteacherbutton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(ctteacherbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 210, 50));
 
         logoutbutton1.setBackground(new java.awt.Color(0, 153, 153));
         logoutbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         logoutbutton1.setForeground(new java.awt.Color(255, 255, 255));
         logoutbutton1.setText("logout");
+        logoutbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutbutton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(logoutbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 210, 50));
 
         upinfobutton2.setBackground(new java.awt.Color(0, 153, 153));
@@ -65,6 +75,20 @@ public class Pdashboard extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ctteacherbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ctteacherbutton1ActionPerformed
+        // TODO add your handling code here:
+        communicateteacher ct = new communicateteacher();
+        ct.show();
+        
+    }//GEN-LAST:event_ctteacherbutton1ActionPerformed
+
+    private void logoutbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutbutton1ActionPerformed
+        // TODO add your handling code here:
+        login L = new login();
+        L.show();
+        dispose();
+    }//GEN-LAST:event_logoutbutton1ActionPerformed
 
     /**
      * @param args the command line arguments

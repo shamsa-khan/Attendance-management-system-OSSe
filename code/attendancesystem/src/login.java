@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -27,10 +30,10 @@ public class login extends javax.swing.JFrame {
 
         loginpanel = new javax.swing.JPanel();
         userbutton = new javax.swing.JButton();
-        passwordt = new javax.swing.JTextField();
         usernamet = new javax.swing.JTextField();
         login = new javax.swing.JButton();
         passwordpanel2 = new javax.swing.JButton();
+        jPasswordField1 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -51,7 +54,6 @@ public class login extends javax.swing.JFrame {
         userbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         userbutton.setText("User Name");
         loginpanel.add(userbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
-        loginpanel.add(passwordt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 160, -1));
         loginpanel.add(usernamet, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 160, -1));
 
         login.setBackground(new java.awt.Color(0, 153, 153));
@@ -68,6 +70,7 @@ public class login extends javax.swing.JFrame {
         passwordpanel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         passwordpanel2.setText("Password");
         loginpanel.add(passwordpanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 100, -1));
+        loginpanel.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 160, -1));
 
         getContentPane().add(loginpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 280));
 
@@ -80,7 +83,29 @@ public class login extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
-         
+       String psd = new String(jPasswordField1.getPassword());
+       if(psd.equals("teacher")){
+       Dashboard d = new Dashboard();
+       d.show();
+       dispose();
+       }
+       else if(psd.equals("admin")){
+       adashboard a = new adashboard();
+       a.show();
+       dispose();
+       }
+       else if(psd.equals("parent")){
+       Pdashboard p = new Pdashboard();
+       p.show();
+       dispose();
+       }
+       else if(psd.equals("student")){
+       sdashboard sd = new sdashboard();
+       sd.show();
+       dispose();
+       }
+       else
+           JOptionPane.showMessageDialog(rootPane, "Worng Password");
     }//GEN-LAST:event_loginActionPerformed
 
     /**
@@ -119,10 +144,10 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JButton login;
     private javax.swing.JPanel loginpanel;
     private javax.swing.JButton passwordpanel2;
-    private javax.swing.JTextField passwordt;
     private javax.swing.JButton userbutton;
     private javax.swing.JTextField usernamet;
     // End of variables declaration//GEN-END:variables

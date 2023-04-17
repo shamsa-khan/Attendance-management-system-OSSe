@@ -61,6 +61,11 @@ public class adashboard extends javax.swing.JFrame {
         logoutbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         logoutbutton.setForeground(new java.awt.Color(255, 255, 255));
         logoutbutton.setText("Logout");
+        logoutbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutbuttonActionPerformed(evt);
+            }
+        });
         jPanel1.add(logoutbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 140, -1));
 
         nbutton2.setBackground(new java.awt.Color(0, 153, 153));
@@ -79,6 +84,13 @@ public class adashboard extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void logoutbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutbuttonActionPerformed
+        // TODO add your handling code here:
+         login L = new login();
+        L.show();
+        dispose();
+    }//GEN-LAST:event_logoutbuttonActionPerformed
 
     /**
      * @param args the command line arguments

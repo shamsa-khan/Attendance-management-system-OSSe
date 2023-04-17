@@ -252,6 +252,9 @@ public class searchstd extends javax.swing.JFrame {
 
     private void logoutbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutbuttonActionPerformed
         // TODO add your handling code here:
+         login L = new login();
+        L.show();
+        dispose();
     }//GEN-LAST:event_logoutbuttonActionPerformed
 
     private void buttonhomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonhomeActionPerformed

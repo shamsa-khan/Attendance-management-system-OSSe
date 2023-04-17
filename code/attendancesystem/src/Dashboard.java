@@ -71,6 +71,11 @@ public class Dashboard extends javax.swing.JFrame {
         MAbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         MAbutton.setForeground(new java.awt.Color(255, 255, 255));
         MAbutton.setText("Mark Attendance");
+        MAbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MAbuttonActionPerformed(evt);
+            }
+        });
         MApanel1.add(MAbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 150, 40));
 
         mainpanel.add(MApanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 180, 100));
@@ -137,6 +142,13 @@ public class Dashboard extends javax.swing.JFrame {
         f.show();
         dispose();
     }//GEN-LAST:event_EpbuttonActionPerformed
+
+    private void MAbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MAbuttonActionPerformed
+                    // TODO add your handling code here:
+                    markatddd mra = new markatddd();
+                    mra.show();
+                    dispose();
+    }//GEN-LAST:event_MAbuttonActionPerformed
 
     /**
      * @param args the command line arguments
