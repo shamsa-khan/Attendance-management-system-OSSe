@@ -1,3 +1,6 @@
+Project name: Attendance Management System.
+Group Leader: Shahzaib
+
 Introduction
 1.1	PROJECT OVERVIEW
 The Attendance Management System is a software developed for daily student attendance in university. It facilitates to access the attendance information of a particular student in a particular class. The information is sorted by the operators, which will be provided by the teacher for a particular class. This system will also help in evaluating attendance eligibility criteria of a student. 
@@ -54,3 +57,9 @@ When a team of developers work on a project, they may design different style or 
 •	Poor User Adoption: The risk that students or faculty may not fully adopt the system, resulting in incomplete or inaccurate attendance data. The risk management plan may include user training and education, and ongoing communication and support to ensure that users understand the benefits of the system and how to use it effectively.
 •	4. Negligence: When data is stored in computers or laptops, it has become so natural that people lose the information when files are accidentally deleted or even it could fall into the wrong hands. Ensure a proper backup strategy to keep your data on important devices and run them smoothly without hassles.
 Unsafe data: If adequate safety precautions are not taken when files and documents are shared in website, smartphones and tablets via internet networks, the information contained on them might gain access to the devices and get exposed to risks. We can make use of cloud deployments to manage the education system better and better.
+
+Group Members:
+1. Shahzaib
+2. Ahsan Zeb
+3. Aqsa Sardar
+4. Shamsa Rani
