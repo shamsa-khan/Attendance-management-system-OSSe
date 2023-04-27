@@ -1,5 +1,13 @@
+
 Project name: Attendance Management System.
+
 Group Leader: Shahzaib
+
+Group Members:
+1. Shahzaib
+2. Ahsan Zeb
+3. Aqsa Sardar
+4. Shamsa Rani
 
 Introduction
 1.1	PROJECT OVERVIEW
@@ -58,8 +66,3 @@ When a team of developers work on a project, they may design different style or 
 •	4. Negligence: When data is stored in computers or laptops, it has become so natural that people lose the information when files are accidentally deleted or even it could fall into the wrong hands. Ensure a proper backup strategy to keep your data on important devices and run them smoothly without hassles.
 Unsafe data: If adequate safety precautions are not taken when files and documents are shared in website, smartphones and tablets via internet networks, the information contained on them might gain access to the devices and get exposed to risks. We can make use of cloud deployments to manage the education system better and better.
 
-Group Members:
-1. Shahzaib
-2. Ahsan Zeb
-3. Aqsa Sardar
-4. Shamsa Rani
