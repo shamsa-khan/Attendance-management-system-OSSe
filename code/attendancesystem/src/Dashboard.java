@@ -89,6 +89,11 @@ public class Dashboard extends javax.swing.JFrame {
         CAbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         CAbutton1.setForeground(new java.awt.Color(255, 255, 255));
         CAbutton1.setText("Check Attendance");
+        CAbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CAbutton1ActionPerformed(evt);
+            }
+        });
         CApanel1.add(CAbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 150, 40));
 
         mainpanel.add(CApanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 190, 100));
@@ -120,6 +125,11 @@ public class Dashboard extends javax.swing.JFrame {
         CCbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         CCbutton1.setForeground(new java.awt.Color(255, 255, 255));
         CCbutton1.setText("Check Class");
+        CCbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CCbutton1ActionPerformed(evt);
+            }
+        });
         CCpanel1.add(CCbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 150, 40));
 
         mainpanel.add(CCpanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 190, 100));
@@ -149,6 +159,20 @@ public class Dashboard extends javax.swing.JFrame {
                     mra.show();
                     dispose();
     }//GEN-LAST:event_MAbuttonActionPerformed
+
+    private void CAbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CAbutton1ActionPerformed
+        // TODO add your handling code here:
+        checkattendance ca = new checkattendance();
+        ca.show();
+        dispose();
+    }//GEN-LAST:event_CAbutton1ActionPerformed
+
+    private void CCbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CCbutton1ActionPerformed
+        // TODO add your handling code here:
+        CheckClas cc = new CheckClas();
+        cc.show();
+        dispose();
+    }//GEN-LAST:event_CCbutton1ActionPerformed
 
     /**
      * @param args the command line arguments

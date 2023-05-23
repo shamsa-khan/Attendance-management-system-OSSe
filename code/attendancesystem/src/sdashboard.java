@@ -50,6 +50,11 @@ public class sdashboard extends javax.swing.JFrame {
         vabutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         vabutton1.setForeground(new java.awt.Color(255, 255, 255));
         vabutton1.setText("View Attendance");
+        vabutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vabutton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(vabutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 370));
@@ -63,6 +68,13 @@ public class sdashboard extends javax.swing.JFrame {
         L.show();
         dispose();
     }//GEN-LAST:event_logoutbuttonActionPerformed
+
+    private void vabutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vabutton1ActionPerformed
+        // TODO add your handling code here:
+        viewatd  ca = new viewatd();
+        ca.show();
+        dispose();
+    }//GEN-LAST:event_vabutton1ActionPerformed
 
     /**
      * @param args the command line arguments

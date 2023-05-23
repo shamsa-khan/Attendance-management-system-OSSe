@@ -115,7 +115,7 @@ public class searchstd extends javax.swing.JFrame {
 
         CApanel.add(CApanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 280, 50));
 
-        sidepael.add(CApanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 280, 50));
+        sidepael.add(CApanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 260, 50));
 
         logoutpanel.setBackground(new java.awt.Color(0, 102, 102));
         logoutpanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, null));
@@ -149,7 +149,7 @@ public class searchstd extends javax.swing.JFrame {
         });
         panelhome.add(buttonhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 160, -1));
 
-        sidepael.add(panelhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 280, 50));
+        sidepael.add(panelhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 260, 50));
 
         mapanel.setBackground(new java.awt.Color(0, 102, 102));
         mapanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, null));
@@ -166,7 +166,7 @@ public class searchstd extends javax.swing.JFrame {
         });
         mapanel.add(mabutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 170, -1));
 
-        sidepael.add(mapanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 280, 50));
+        sidepael.add(mapanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 260, 50));
 
         SSpanel.setBackground(new java.awt.Color(0, 102, 102));
         SSpanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, null));
@@ -183,7 +183,7 @@ public class searchstd extends javax.swing.JFrame {
         });
         SSpanel.add(SSbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 170, -1));
 
-        sidepael.add(SSpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 280, 50));
+        sidepael.add(SSpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 260, 50));
 
         Ccpanel.setBackground(new java.awt.Color(0, 102, 102));
         Ccpanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.white, null, null));
@@ -200,9 +200,9 @@ public class searchstd extends javax.swing.JFrame {
         });
         Ccpanel.add(CCbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 170, -1));
 
-        sidepael.add(Ccpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 280, 50));
+        sidepael.add(Ccpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 260, 50));
 
-        getContentPane().add(sidepael, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 720));
+        getContentPane().add(sidepael, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 720));
 
         rightpanel.setBackground(new java.awt.Color(0, 153, 153));
         rightpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -241,7 +241,7 @@ public class searchstd extends javax.swing.JFrame {
 
         rightpanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 217, 560, 450));
 
-        getContentPane().add(rightpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 1430, 720));
+        getContentPane().add(rightpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 720, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

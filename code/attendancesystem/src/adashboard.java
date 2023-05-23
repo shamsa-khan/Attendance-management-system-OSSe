@@ -43,12 +43,22 @@ public class adashboard extends javax.swing.JFrame {
         gdrbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         gdrbutton.setForeground(new java.awt.Color(255, 255, 255));
         gdrbutton.setText("Generate Discipline Report");
+        gdrbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gdrbuttonActionPerformed(evt);
+            }
+        });
         jPanel1.add(gdrbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 210, -1));
 
         VAbutton1.setBackground(new java.awt.Color(0, 153, 153));
         VAbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         VAbutton1.setForeground(new java.awt.Color(255, 255, 255));
         VAbutton1.setText("View Attendance");
+        VAbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VAbutton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(VAbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 140, -1));
 
         msbutton1.setBackground(new java.awt.Color(0, 153, 153));
@@ -72,12 +82,22 @@ public class adashboard extends javax.swing.JFrame {
         nbutton2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         nbutton2.setForeground(new java.awt.Color(255, 255, 255));
         nbutton2.setText("Notify");
+        nbutton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nbutton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(nbutton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 140, -1));
 
         epbutton1.setBackground(new java.awt.Color(0, 153, 153));
         epbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         epbutton1.setForeground(new java.awt.Color(255, 255, 255));
         epbutton1.setText("Edit Profile");
+        epbutton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                epbutton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(epbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 140, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 450));
@@ -91,6 +111,34 @@ public class adashboard extends javax.swing.JFrame {
         L.show();
         dispose();
     }//GEN-LAST:event_logoutbuttonActionPerformed
+
+    private void VAbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VAbutton1ActionPerformed
+        // TODO add your handling code here:
+        checkattendance ca = new checkattendance();
+        ca.show();
+        dispose();
+    }//GEN-LAST:event_VAbutton1ActionPerformed
+
+    private void gdrbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gdrbuttonActionPerformed
+        // TODO add your handling code here:
+        GDR gd = new GDR();
+        gd.show();
+        dispose();
+    }//GEN-LAST:event_gdrbuttonActionPerformed
+
+    private void epbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epbutton1ActionPerformed
+        // TODO add your handling code here:
+        editprofile ep = new editprofile();
+        ep.show();
+        dispose();
+    }//GEN-LAST:event_epbutton1ActionPerformed
+
+    private void nbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nbutton2ActionPerformed
+        // TODO add your handling code here:
+        notify ntt = new notify();
+        ntt.show();
+        dispose();
+    }//GEN-LAST:event_nbutton2ActionPerformed
 
     /**
      * @param args the command line arguments

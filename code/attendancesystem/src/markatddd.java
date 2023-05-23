@@ -26,10 +26,13 @@ public class markatddd extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        udbutton = new javax.swing.JButton();
-        Addbutton1 = new javax.swing.JButton();
+        Savebutton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel4 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -37,17 +40,11 @@ public class markatddd extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        udbutton.setBackground(new java.awt.Color(0, 153, 153));
-        udbutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        udbutton.setForeground(new java.awt.Color(255, 255, 255));
-        udbutton.setText("Update");
-        jPanel1.add(udbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, -1, -1));
-
-        Addbutton1.setBackground(new java.awt.Color(0, 153, 153));
-        Addbutton1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        Addbutton1.setForeground(new java.awt.Color(255, 255, 255));
-        Addbutton1.setText("upload");
-        jPanel1.add(Addbutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, -1, -1));
+        Savebutton.setBackground(new java.awt.Color(0, 153, 153));
+        Savebutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        Savebutton.setForeground(new java.awt.Color(255, 255, 255));
+        Savebutton.setText("Save");
+        jPanel1.add(Savebutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 670, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -72,9 +69,23 @@ public class markatddd extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
         jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(692, 70, 610, 580));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 560));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel3.setText("Select class");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 70, 20));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Object Oriented Software Engineering", "Web Technology", "Database system 1" }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 250, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jLabel4.setText("Select Subject");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BSE -4A(Theory)", "BSE-4A(Lab)", "BSE -4B(Theory)", "BSE-4B(Lab)" }));
+        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 250, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 760));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -115,10 +126,13 @@ public class markatddd extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Addbutton1;
+    private javax.swing.JButton Savebutton;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton udbutton;
     // End of variables declaration//GEN-END:variables
 }

@@ -41,6 +41,11 @@ public class Pdashboard extends javax.swing.JFrame {
         vabutton.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         vabutton.setForeground(new java.awt.Color(255, 255, 255));
         vabutton.setText("View Attendance");
+        vabutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vabuttonActionPerformed(evt);
+            }
+        });
         jPanel1.add(vabutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 210, 50));
 
         ctteacherbutton1.setBackground(new java.awt.Color(0, 153, 153));
@@ -69,6 +74,11 @@ public class Pdashboard extends javax.swing.JFrame {
         upinfobutton2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         upinfobutton2.setForeground(new java.awt.Color(255, 255, 255));
         upinfobutton2.setText("Update Information");
+        upinfobutton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                upinfobutton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(upinfobutton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 210, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 430));
@@ -76,19 +86,32 @@ public class Pdashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ctteacherbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ctteacherbutton1ActionPerformed
-        // TODO add your handling code here:
-        communicateteacher ct = new communicateteacher();
-        ct.show();
-        
-    }//GEN-LAST:event_ctteacherbutton1ActionPerformed
-
     private void logoutbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutbutton1ActionPerformed
         // TODO add your handling code here:
         login L = new login();
         L.show();
         dispose();
     }//GEN-LAST:event_logoutbutton1ActionPerformed
+
+    private void ctteacherbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ctteacherbutton1ActionPerformed
+              communicateteacher ct = new communicateteacher();
+              ct.show();
+              dispose();
+    }//GEN-LAST:event_ctteacherbutton1ActionPerformed
+
+    private void vabuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vabuttonActionPerformed
+        // TODO add your handling code here:
+        viewatd ca = new viewatd();
+        ca.show();
+        dispose();
+    }//GEN-LAST:event_vabuttonActionPerformed
+
+    private void upinfobutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upinfobutton2ActionPerformed
+        // TODO add your handling code here:
+        editprofile ep = new editprofile();
+        ep.show();
+        dispose();
+    }//GEN-LAST:event_upinfobutton2ActionPerformed
 
     /**
      * @param args the command line arguments
