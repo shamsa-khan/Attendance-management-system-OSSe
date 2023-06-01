@@ -10,7 +10,7 @@
 public class adashboard extends javax.swing.JFrame {
 
     /**
-     * Creates new form adashboard
+     * Creates new form a dashboard
      */
     public adashboard() {
         initComponents();
